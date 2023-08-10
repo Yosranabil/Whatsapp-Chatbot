@@ -112,7 +112,7 @@ app.post("/webhook", (req, res) => {
       body.entry[0].changes[0].value.metadata.phone_number_id;
     let from = body.entry[0].changes[0].value.messages[0].from;
     let name = body.entry[0].changes[0].value.contacts[0].profile.name;
-    let companyName = "Etisalat Eygpt";
+    let companyName = "Your Company";
     const message = body.entry[0].changes[0].value.messages[0];
     const personalizedTemplate = template
       .replace("{username}", name)
